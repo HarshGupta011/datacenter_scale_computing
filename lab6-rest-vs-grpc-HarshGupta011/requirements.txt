@@ -1,0 +1,10 @@
+sudo apt-get install -y python3 python3-pip
+sudo apt install protobuf-compiler
+pip install --upgrade pip
+pip install flask
+pip install jsonpickle
+pip install grpcio
+pip install grpcio-tools
+pip install Pillow
+pip install requests
+python3 -m grpc_tools.protoc -I. --python_out=. --grpc_python_out=. grpc.proto
